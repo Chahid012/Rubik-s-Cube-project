@@ -25,7 +25,8 @@ casename = ['Up','Right','Front','Down','Left','Back']
 caseposition = [[]]
 
 # Open camera
-vid = cv2.VideoCapture(0)
+url ='http://#IP:#port/video' 
+vid = cv2.VideoCapture(url)
     # camera size
 win_size = [1920,1080]
 
@@ -184,7 +185,6 @@ arduino.close()
 print("Serial Communication With Arduino is Close")
 
 cv2.destroyAllWindows()
-
 
 
 
