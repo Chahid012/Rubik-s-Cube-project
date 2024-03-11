@@ -10,7 +10,7 @@
 
 **Step 3:** Use of a matrix representing the six faces of the Rubik's Cube to devise the solution. The end result is a sequence of detailed steps for solving the cube.
 
-## group members
+## Group members
 
 * LE Thu
 * AGNABER Chahid
