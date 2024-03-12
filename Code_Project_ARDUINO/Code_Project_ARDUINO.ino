@@ -21,21 +21,21 @@ void ini() {
   Serv2b.write(xa2b);
   Serv3b.write(xa3b);
   Serv4b.write(xa4b);
-  delay(100);
+  delay(140);
   // attach the servo motors to their pins
   Serv1b.attach(pinServ1b);
   Serv2b.attach(pinServ2b);
   Serv3b.attach(pinServ3b);
   Serv4b.attach(pinServ4b);
-  delay(500);
+  delay(140);
   Serv1a.attach(pinServ1a);
-  delay(500);
+  delay(140);
   Serv2a.attach(pinServ2a);
-  delay(500);
+  delay(140);
   Serv3a.attach(pinServ3a);
-  delay(500);
+  delay(140);
   Serv4a.attach(pinServ4a);
-  delay(500);
+  delay(140);
 }
 
 void Move() {
@@ -44,24 +44,24 @@ void Move() {
   Serv2b.write(xa2b);
   Serv3b.write(xa3b);
   Serv4b.write(xa4b);
-  //delay(100);
+  //delay(140);
 
   // dung
   Serv1a.write(dung1a);
-  //delay(100);
+  //delay(140);
   Serv2a.write(dung2a);
-  //delay(100);
+  //delay(140);
   Serv3a.write(dung3a);
-  //delay(100);
+  //delay(140);
   Serv4a.write(dung4a);
-  //delay(100);
+  //delay(140);
 
   // gan
   Serv1b.write(gan1b);
   Serv2b.write(gan2b);
   Serv3b.write(gan3b);
   Serv4b.write(gan4b);
-  //delay(100);
+  //delay(140);
 }
 
 void End() {
@@ -70,7 +70,7 @@ void End() {
   Serv2b.write(xa2b);
   Serv3b.write(xa3b);
   Serv4b.write(xa4b);
-  //delay(1000);
+  //delay(1400);
 }
 
 void setup() {
@@ -83,61 +83,61 @@ void setup() {
 /////////////////////////////FRONT FUNCTION//////////////////////////////
 void F_COUNTERCLOCKWISE_90() {
     Serv1a.write(ngang1a);
-    delay(500);
+    delay(140);
     Serv1b.write(xa1b);
-    delay(500);
+    delay(140);
     Serv1a.write(dung1a);
-    delay(500);
+    delay(140);
     Serv1b.write(gan1b);
-    delay(500);
+    delay(140);
 }
 
 void F_CLOCKWISE_90() {
     Serv1b.write(xa1b);
-    delay(500);
+    delay(140);
     Serv1a.write(ngang1a);
-    delay(500);
+    delay(140);
     Serv1b.write(gan1b);
-    delay(500);
+    delay(140);
     Serv1a.write(dung1a);
-    delay(500);
+    delay(140);
 }
 
 void F_ROTATE_180() {
   for(i=1;i<=2;i++)
   {
     Serv1a.write(ngang1a);
-    delay(500);
+    delay(140);
     Serv1b.write(xa1b);
-    delay(500);
+    delay(140);
     Serv1a.write(dung1a);
-    delay(500);
+    delay(140);
     Serv1b.write(gan1b);
-    delay(500);
+    delay(140);
   }
 }
 
 //////////////////////////////LEFT FUNCTION///////////////////////////////
 void L_CLOCKWISE_90(){
     Serv3b.write(xa3b);
-    delay(500);
+    delay(140);
     Serv3a.write(ngang3a);
-    delay(500);
+    delay(140);
     Serv3b.write(gan3b);
-    delay(500);
+    delay(140);
     Serv3a.write(dung3a);
-    delay(500);
+    delay(140);
 }
 
 void L_COUNTERCLOCKWISE_90(){
     Serv3a.write(ngang3a);
-    delay(500);
+    delay(140);
     Serv3b.write(xa3b);
-    delay(500);
+    delay(140);
     Serv3a.write(dung3a);
-    delay(500);
+    delay(140);
     Serv3b.write(gan3b);
-    delay(500);
+    delay(140);
 
 }
 //////////////////////////////EDIT !!!!!//////////////////////////
@@ -149,84 +149,84 @@ void L_ROTATE_180(){
 ///////////////////////////BACK FUNCTION///////////////////////////////
 void B_CLOCKWISE_90(){
   Serv2a.write(ngang2a);
-  delay(500);
+  delay(140);
   Serv2b.write(xa2b);
-  delay(500);
+  delay(140);
   Serv2a.write(dung2a);
-  delay(500);
+  delay(140);
   Serv2b.write(gan2b);
-  delay(500);
+  delay(140);
 }
 
 void B_COUNTERCLOCKWISE_90() {
   Serv2b.write(xa2b);
-  delay(500);
+  delay(140);
   Serv2a.write(ngang2a);
-  delay(500);
+  delay(140);
   Serv2b.write(gan2b);
-  delay(500);
+  delay(140);
   Serv2a.write(dung2a);
-  delay(500);
+  delay(140);
 }
 
 void B_ROTATE_180() {
   Serv2b.write(xa2b);
-  delay(500);
+  delay(140);
   Serv2a.write(ngang2a);
-  delay(500);
+  delay(140);
   Serv2b.write(gan2b);
-  delay(500);
+  delay(140);
   Serv2a.write(dung2a);
-  delay(500);
+  delay(140);
   Serv2b.write(xa2b);
-  delay(500);
+  delay(140);
   Serv2a.write(ngang2a);
-  delay(500);
+  delay(140);
   Serv2b.write(gan2b);
-  delay(500);
+  delay(140);
   Serv2a.write(dung2a);
-  delay(500);
+  delay(140);
 }
 
 void R_COUNTERCLOCKWISE_90() {
   Serv4b.write(xa4b);
-  delay(500);
+  delay(140);
   Serv4a.write(ngang4a);
-  delay(500);
+  delay(140);
   Serv4b.write(gan4b);
-  delay(500);
+  delay(140);
   Serv4a.write(dung4a);
-  delay(500); 
+  delay(140); 
 }
 
 void R_CLOCKWISE_90() {
   Serv4a.write(ngang4a);
-  delay(500);
+  delay(140);
   Serv4b.write(xa4b);
-  delay(500);
+  delay(140);
   Serv4a.write(dung4a);
-  delay(500);
+  delay(140);
   Serv4b.write(gan4b);
-  delay(500);
+  delay(140);
 }
 
 void R_ROTATE_180() {
   Serv4b.write(xa4b);
-  delay(500);
+  delay(140);
   Serv4a.write(ngang4a);
-  delay(500);
+  delay(140);
   Serv4b.write(gan4b);
-  delay(500);
+  delay(140);
   Serv4a.write(dung4a);
-  delay(500);
+  delay(140);
   Serv4b.write(xa4b);
-  delay(500);
+  delay(140);
   Serv4a.write(ngang4a);
-  delay(500);
+  delay(140);
   Serv4b.write(gan4b);
-  delay(500);
+  delay(140);
   Serv4a.write(dung4a);
-  delay(500);
+  delay(140);
 }
 
 void UP_COUNTERCLOCKWISE_90(){
@@ -234,50 +234,50 @@ void UP_COUNTERCLOCKWISE_90(){
             {
               Serv1b.write(xa1b);
               Serv2b.write(xa2b);
-              delay(500);
+              delay(140);
               Serv3a.write(ngang3a);
               Serv4a.write(ngang4a);
-              delay(500);
+              delay(140);
               Serv1b.write(gan1b);
               Serv2b.write(gan2b);
-              delay(500);
+              delay(140);
               Serv3b.write(xa3b);
               Serv4b.write(xa4b);
-              delay(500);
+              delay(140);
               Serv3a.write(dung3a);
               Serv4a.write(dung4a);
-              delay(500);
+              delay(140);
               Serv3b.write(gan3b);
               Serv4b.write(gan4b);
-              delay(500);                          
+              delay(140);                          
             }
               Serv1a.write(ngang1a);
-              delay(500);
+              delay(140);
               Serv1b.write(xa1b);
-              delay(500);
+              delay(140);
               Serv1a.write(dung1a);
-              delay(500);
-              Serv1b.write(gan1b);
-              delay(500);
+              delay(140);
+              //Serv1b.write(gan1b);
+              //delay(140);
 
-              Serv1b.write(xa1b);
+              //Serv1b.write(xa1b);
               Serv2b.write(xa2b);
-              delay(500);
+              delay(140);
               Serv3a.write(ngang3a);
               Serv4a.write(ngang4a);
-              delay(500);
+              delay(140);
               Serv1b.write(gan1b);
               Serv2b.write(gan2b);
-              delay(500);
+              delay(140);
               Serv3b.write(xa3b);
               Serv4b.write(xa4b);
-              delay(500);
+              delay(140);
               Serv3a.write(dung3a);
               Serv4a.write(dung4a);
-              delay(500);
+              delay(140);
               Serv3b.write(gan3b);
               Serv4b.write(gan4b);
-              delay(500);  
+              delay(140);  
 
           }
 
@@ -286,50 +286,50 @@ void UP_CLOCKWISE_90() {
             {
               Serv1b.write(xa1b);
               Serv2b.write(xa2b);
-              delay(500);
+              delay(140);
               Serv3a.write(ngang3a);
               Serv4a.write(ngang4a);
-              delay(500);
+              delay(140);
               Serv1b.write(gan1b);
               Serv2b.write(gan2b);
-              delay(500);
+              delay(140);
               Serv3b.write(xa3b);
               Serv4b.write(xa4b);
-              delay(500);
+              delay(140);
               Serv3a.write(dung3a);
               Serv4a.write(dung4a);
-              delay(500);
+              delay(140);
               Serv3b.write(gan3b);
               Serv4b.write(gan4b);
-              delay(500);                          
+              delay(140);                          
             }
               Serv1b.write(xa1b);
-              delay(500);
+              delay(140);
               Serv1a.write(ngang1a);
-              delay(500);
+              delay(140);
               Serv1b.write(gan1b);
-              delay(500);
+              delay(140);
               Serv1a.write(dung1a);
-              delay(500);
+              delay(140);
 
               Serv1b.write(xa1b);
               Serv2b.write(xa2b);
-              delay(500);
+              delay(140);
               Serv3a.write(ngang3a);
               Serv4a.write(ngang4a);
-              delay(500);
+              delay(140);
               Serv1b.write(gan1b);
               Serv2b.write(gan2b);
-              delay(500);
+              delay(140);
               Serv3b.write(xa3b);
               Serv4b.write(xa4b);
-              delay(500);
+              delay(140);
               Serv3a.write(dung3a);
               Serv4a.write(dung4a);
-              delay(500);
+              delay(140);
               Serv3b.write(gan3b);
               Serv4b.write(gan4b);
-              delay(500);  
+              delay(140);  
           }
             
 void UP_ROTATE_180() {
@@ -337,219 +337,219 @@ for(i=1;i<=3;i++)
   {
     Serv1b.write(xa1b);
     Serv2b.write(xa2b);
-    delay(500);
+    delay(140);
     Serv3a.write(ngang3a);
     Serv4a.write(ngang4a);
-    delay(500);
+    delay(140);
     Serv1b.write(gan1b);
     Serv2b.write(gan2b);
-    delay(500);
+    delay(140);
     Serv3b.write(xa3b);
     Serv4b.write(xa4b);
-    delay(500);
+    delay(140);
     Serv3a.write(dung3a);
     Serv4a.write(dung4a);
-    delay(500);
+    delay(140);
     Serv3b.write(gan3b);
     Serv4b.write(gan4b);
-    delay(500);                          
+    delay(140);                          
   }
     Serv1b.write(xa1b);
-    delay(500);
+    delay(140);
     Serv1a.write(ngang1a);
-    delay(500);
+    delay(140);
     Serv1b.write(gan1b);
-    delay(500);
+    delay(140);
     Serv1a.write(dung1a);
-    delay(500);
+    delay(140);
     Serv1b.write(xa1b);
-    delay(500);
+    delay(140);
     Serv1a.write(ngang1a);
-    delay(500);
+    delay(140);
     Serv1b.write(gan1b);
-    delay(500);
+    delay(140);
     Serv1a.write(dung1a);
-    delay(500);
+    delay(140);
 
     Serv1b.write(xa1b);
     Serv2b.write(xa2b);
-    delay(500);
+    delay(140);
     Serv3a.write(ngang3a);
     Serv4a.write(ngang4a);
-    delay(500);
+    delay(140);
     Serv1b.write(gan1b);
     Serv2b.write(gan2b);
-    delay(500);
+    delay(140);
     Serv3b.write(xa3b);
     Serv4b.write(xa4b);
-    delay(500);
+    delay(140);
     Serv3a.write(dung3a);
     Serv4a.write(dung4a);
-    delay(500);
+    delay(140);
     Serv3b.write(gan3b);
     Serv4b.write(gan4b);
-    delay(500);
+    delay(140);
 }
 
 void DW_COUNTERCLOCKWISE_90(){
   Serv1b.write(xa1b);
   Serv2b.write(xa2b);
-  delay(500);
+  delay(140);
   Serv3a.write(ngang3a);
   Serv4a.write(ngang4a);
-  delay(500);
+  delay(140);
   Serv1b.write(gan1b);
   Serv2b.write(gan2b);
-  delay(500);
+  delay(140);
   Serv3b.write(xa3b);
   Serv4b.write(xa4b);
-  delay(500);
+  delay(140);
   Serv3a.write(dung3a);
   Serv4a.write(dung4a);
-  delay(500);
+  delay(140);
   Serv3b.write(gan3b);
   Serv4b.write(gan4b);
-  delay(500);                          
+  delay(140);                          
 
   Serv1a.write(ngang1a);
-  delay(500);
+  delay(140);
   Serv1b.write(xa1b);
-  delay(500);
+  delay(140);
   Serv1a.write(dung1a);
-  delay(500);
-  Serv1b.write(gan1b);
-  delay(500);
+  delay(140);
+  //Serv1b.write(gan1b);
+  //delay(140);
 
   for(i=1;i<=3;i++)
     {
       Serv1b.write(xa1b);
       Serv2b.write(xa2b);
-      delay(500);
+      delay(140);
       Serv3a.write(ngang3a);
       Serv4a.write(ngang4a);
-      delay(500);
+      delay(140);
       Serv1b.write(gan1b);
       Serv2b.write(gan2b);
-      delay(500);
+      delay(140);
       Serv3b.write(xa3b);
       Serv4b.write(xa4b);
-      delay(500);
+      delay(140);
       Serv3a.write(dung3a);
       Serv4a.write(dung4a);
-      delay(500);
+      delay(140);
       Serv3b.write(gan3b);
       Serv4b.write(gan4b);
-      delay(500);                          
+      delay(140);                          
     }
 }
 
 void DW_CLOCKWISE_90() {
   Serv1b.write(xa1b);
   Serv2b.write(xa2b);
-  delay(500);
+  delay(140);
   Serv3a.write(ngang3a);
   Serv4a.write(ngang4a);
-  delay(500);
+  delay(140);
   Serv1b.write(gan1b);
   Serv2b.write(gan2b);
-  delay(500);
+  delay(140);
   Serv3b.write(xa3b);
   Serv4b.write(xa4b);
-  delay(500);
+  delay(140);
   Serv3a.write(dung3a);
   Serv4a.write(dung4a);
-  delay(500);
+  delay(140);
   Serv3b.write(gan3b);
   Serv4b.write(gan4b);
-  delay(500);                          
+  delay(140);                          
 
   Serv1b.write(xa1b);
-  delay(500);
+  delay(140);
   Serv1a.write(ngang1a);
-  delay(500);
+  delay(140);
   Serv1b.write(gan1b);
-  delay(500);
+  delay(140);
   Serv1a.write(dung1a);
-  delay(500);
+  delay(140);
   for(i=1;i<=3;i++)
     {
       Serv1b.write(xa1b);
       Serv2b.write(xa2b);
-      delay(500);
+      delay(140);
       Serv3a.write(ngang3a);
       Serv4a.write(ngang4a);
-      delay(500);
+      delay(140);
       Serv1b.write(gan1b);
       Serv2b.write(gan2b);
-      delay(500);
+      delay(140);
       Serv3b.write(xa3b);
       Serv4b.write(xa4b);
-      delay(500);
+      delay(140);
       Serv3a.write(dung3a);
       Serv4a.write(dung4a);
-      delay(500);
+      delay(140);
       Serv3b.write(gan3b);
       Serv4b.write(gan4b);
-      delay(500);                          
+      delay(140);                          
     }
 }
 
 void DW_ROTATE_180() {
   Serv1b.write(xa1b);
   Serv2b.write(xa2b);
-  delay(500);
+  delay(140);
   Serv3a.write(ngang3a);
   Serv4a.write(ngang4a);
-  delay(500);
+  delay(140);
   Serv1b.write(gan1b);
   Serv2b.write(gan2b);
-  delay(500);
+  delay(140);
   Serv3b.write(xa3b);
   Serv4b.write(xa4b);
-  delay(500);
+  delay(140);
   Serv3a.write(dung3a);
   Serv4a.write(dung4a);
-  delay(500);
+  delay(140);
   Serv3b.write(gan3b);
   Serv4b.write(gan4b);
-  delay(500);                          
+  delay(140);                          
 
   Serv1b.write(xa1b);
-  delay(500);
+  delay(140);
   Serv1a.write(ngang1a);
-  delay(500);
+  delay(140);
   Serv1b.write(gan1b);
-  delay(500);
+  delay(140);
   Serv1a.write(dung1a);
-  delay(500);
+  delay(140);
   Serv1b.write(xa1b);
-  delay(500);
+  delay(140);
   Serv1a.write(ngang1a);
-  delay(500);
+  delay(140);
   Serv1b.write(gan1b);
-  delay(500);
+  delay(140);
   Serv1a.write(dung1a);
-  delay(500);
+  delay(140);
 for(i=1;i<=3;i++)
     {
       Serv1b.write(xa1b);
       Serv2b.write(xa2b);
-      delay(500);
+      delay(140);
       Serv3a.write(ngang3a);
       Serv4a.write(ngang4a);
-      delay(500);
+      delay(140);
       Serv1b.write(gan1b);
       Serv2b.write(gan2b);
-      delay(500);
+      delay(140);
       Serv3b.write(xa3b);
       Serv4b.write(xa4b);
-      delay(500);
+      delay(140);
       Serv3a.write(dung3a);
       Serv4a.write(dung4a);
-      delay(500);
+      delay(140);
       Serv3b.write(gan3b);
       Serv4b.write(gan4b);
-      delay(500);                          
+      delay(140);                          
     }
 }
 
@@ -700,5 +700,4 @@ void loop()
     data = "";
   }
     }
-
-//BEST TEAM 
+//BEST TEAM
